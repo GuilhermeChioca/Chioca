@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens com Texto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .popup-caixa {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .joia {
+            width: 220px;
+        }
+        .popup-conteudo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .fechar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-caixa" id="popup">
+        <div class="popup-conteudo">
+            <span class="fechar" onclick="fecharPopup()">&times;</span>
+            <p>Não se esqueça de avaliar para nosso site!</p>
+            <img class="joia" src="imagens/excelencia.png" alt="imagem">
+        </div>
+    </div>
+
+    <script>
+        // Função para abrir o pop-up
+        function abrirPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        setTimeout(function () {
+            abrirPopup();
+        }, 6000);
+
+        setTimeout(function () {
+            fecharPopup();
+        }, 9000);
+
+        // Função para fechar o pop-up
+        function fecharPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+
+
+    </script>
+    <header>
+        <section>
+            <nav class="menu1">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="imagens/Group 1000001786.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">Loja Virtual</a>
+                    </li>
+                    <li>
+                        <a href="">Grupo Verse</a>
+                    </li>
+                    <li>
+                        <a href="">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <h3>Verse.tech</h3>
+    <div class="imagem-container">
+        <img src="imagens/Rectangle 7.png" alt="smartwhach">
+        <p class="descricao">O smartwatch é um dispositivo versátil que vai além de um simples relógio. Ele mantém você
+            conectado ao mundo digital, permitindo receber notificações, monitorar sua saúde, e até mesmo realizar
+            chamadas. Sua interface intuitiva e tela sensível ao toque oferecem praticidade no uso. Com diversas
+            funções, como rastreamento de atividades físicas e controle de música, o smartwatch se torna um companheiro
+            essencial para uma vida mais conectada e saudável. Este pequeno dispositivo no seu pulso oferece
+            conveniência e estilo em um só pacote.</p>
+    </div>
+    <div class="imagem-container">
+        <img src="imagens/Rectangle 7 (1).png" alt="fone bluetoth">
+        <p class="descricao">Os fones Bluetooth são dispositivos sem fio que revolucionaram a forma como ouvimos música
+            e atendemos chamadas. Com sua tecnologia avançada, proporcionam liberdade de movimento e alta qualidade de
+            som. Seu design compacto e ergonômico garante conforto durante horas de uso. Além disso, a conectividade
+            Bluetooth simplifica a vida, eliminando emaranhados de fios. Experimente a praticidade e a experiência
+            sonora superior dos fones Bluetooth hoje mesmo!</p>
+    </div>
+    <div class="imagem-container">
+        <img src="imagens/Rectangle 7 (2).png" alt="iphone">
+        <p class="descricao">O iPhone 14 é a mais recente inovação da Apple, elevando ainda mais o padrão de excelência
+            da marca. Com um design elegante e materiais premium, este dispositivo oferece uma experiência de usuário
+            inigualável. Sua potência é alimentada pelo mais recente processador A16, garantindo um desempenho
+            excepcional. A câmera aprimorada captura fotos e vídeos incríveis, enquanto recursos inovadores, como a
+            tecnologia 5G e uma bateria de longa duração, tornam o iPhone 14 uma escolha incrível para quem busca o
+            melhor em smartphones.</p>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Links úteis</h3>
+                <p>Loja Virtual</p>
+            </div>
+            <div class="footer-column">
+                <h3>Redes sociais</h3>
+                <p>Facebook</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p>Endereço: Av. Principal, 900</p>
+                <p>Telefone: (17) 5522-3456</p>
+                <p>E-mail: Versetechbr@gmail.com </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
